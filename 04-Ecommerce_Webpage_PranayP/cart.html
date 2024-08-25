@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <title>Featured Product | Ecommerce Website</title>
+</head>
+
+<body>
+    <!-- Header start -->
+
+    <header class="container">
+        <nav class="items">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo"><a href="index.html">ArrowWatch</a> </div>
+            <ul class="navitems">
+                <li class="nav"><a href="index.html">HOME</a></li>
+                <li class="nav"><a href="featuredproduct.html">FEATURED</a></li>
+                <li class="nav"><a href="offers.html">OFFERS</a> </li>
+            </ul>
+            <div class="right-items">
+                <ul>
+                    <li class="right-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Popup Form Start -->
+
+    <button class="open-button" onclick="openForm()">CONTACT US</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <img src="images/helpline.png" alt="img">
+            <h1>Need Some Help?</h1>
+            <h3>Don’t know which watch to buy?Feel free to get in touch with us on:</h3>
+            <h5>Call:
+                +91 9004064936</h5>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close <i class="fa fa-remove"></i></button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <!-- Popup Form End -->
+
+    <!-- container2 Start -->
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-card">
+                <img src="images/07.jpg" alt="">
+                <h5 class="cart-card-title">Overfly Lige
+                    <p class="cart-card-text">Rs. 38,700.00</p>
+                </h5>
+                <div class="quantity">
+                    <input type="number" class="input-box" value="1" min="1" max="10">
+                    <input type="button" class="cart-button" value="Remove">
+                    <div class="summary">
+                        <h2>Cart Summary</h2>
+                        <h4>Subtotal <span>₹ 38,700.00</span></h4>
+                        <h4>GST <span>₹ 4644.00</span></h4>
+                        <h4>Subtotal <span>₹ 43,344.00</span></h4>
+                        <input type="button" class="summary-btn" value="Proceed to Checkout">
+                    </div>
+                </div>
+              
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- container2 End -->
+
+    <div class="overview">
+        <div class="box" id="box1">
+            <img src="images/thumb-up.gif" alt="">
+            <h2>4.8 out of 5 stars</h2>
+            <p>from 161,000 reviews worldwide</p>
+        </div>
+        <div class="box" id="box2">
+            <img src="images/watch.gif" alt="">
+            <h2>9 million</h2>
+            <p>watch enthusiasts use ArrowWatch each month</p>
+        </div>
+        <div class="box" id="box3">
+            <img src="images/handshake.gif" alt="">
+            <h2>Over 200,000</h2>
+            <p>customers choose Buyer Protection annually</p>
+        </div>
+        <div class="box" id="box4">
+            <img src="images/avatar.gif" alt="">
+            <h2>More than 25,000</h2>
+            <p>trustworthy sellers</p>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <footer class="container4">
+        <div class="sec">
+            <h1>ArrowWatch</h1>
+            <p>Style With <b>ArrowWatch</b></p>
+        </div>
+        <div class="sec">
+            <h2>Navigation</h2>
+            <ul>
+                <li class="fotter-li"><a href="index.html">Home</a></li>
+                <li class="fotter-li"><a href="">About</a></li>
+                <li class="fotter-li"><a href="featuredproduct.html">Featured Product</a></li>
+            </ul>
+        </div>
+
+        <div class="sec">
+            <h2>Follow Us</h2>
+            <ul>
+                <li class="fotter-li"><a href="">Facebook</a></li>
+                <li class="fotter-li"><a href="">Instagram</a></li>
+                <li class="fotter-li"><a href="">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Footer end -->
+
+</body>
+
+</html>

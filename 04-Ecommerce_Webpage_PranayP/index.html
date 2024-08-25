@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>Watches | Ecommerce Website</title>
+</head>
+
+<body>
+    <!-- Header start -->
+
+    <header class="container">
+        <nav class="items">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="logo"><a href="index.html">ArrowWatch</a> </div>
+            <ul class="navitems">
+                <li class="nav"><a href="index.html">HOME</a></li>
+                <li class="nav"><a href="featuredproduct.html">FEATURED</a></li>
+                <li class="nav"><a href="offers.html">OFFERS</a> </li>
+            </ul>
+            <div class="right-items">
+                <ul>
+                    <li class="right-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Header End -->
+
+    <!-- Popup Form Start -->
+
+    <button class="open-button" onclick="openForm()">CONTACT US</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <img src="images/helpline.png" alt="img">
+            <h1>Need Some Help?</h1>
+            <h3>Don’t know which watch to buy?Feel free to get in touch with us on:</h3>
+            <h5>Call:
+                +91 9004064936</h5>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close <i class="fa fa-remove"></i></button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <!-- Popup Form End -->
+
+    <!-- container2 Start -->
+
+    <div class="container2">
+        <div class="leftsection" id="box">
+            <img src="images/r01.jpg" alt="">
+        </div>
+        <div class="rightsection" id="box">
+            <img src="images/right2.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- container2 End -->
+
+    <!-- Featured Products Start -->
+
+    <div class="featured">Featured Products</div>
+    <div class="cards">
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/01.jpg" alt="">
+            </div>
+            <h5 class="card-title">Astron Dual-Time Watch</h5>
+            <p class="card-text">Rs. 2,15,000.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/02.jpg" alt="">
+            </div>
+            <h5 class="card-title">Galileo - Watchmaking Kit</h5>
+            <p class="card-text">Rs. 18,700.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/04.jpg" alt="">
+            </div>
+            <h5 class="card-title">Maurice de Mauriac</h5>
+            <p class="card-text">Rs. 300,725.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/05.jpg" alt="">
+            </div>
+            <h5 class="card-title">Michael Kors</h5>
+            <p class="card-text">Rs. 21,995.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/06.jpg" alt="">
+            </div>
+            <h5 class="card-title">Heuer Autavia</h5>
+            <p class="card-text">Rs.6,52,800</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/07.jpg" alt="">
+            </div>
+            <h5 class="card-title">Overfly Lige </h5>
+            <p class="card-text">Rs. 38,700.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card1">
+                <img src="images/08.jpg" alt="">
+            </div>
+            <h5 class="card-title">Emporio Armani</h5>
+            <p class="card-text">Rs. 26,600.00</p>
+            <form action="cart.html">
+                <input type="submit" class="btn" value="Add to Cart">
+                <input type="submit" class="btn" value="Buy Now">
+            </form>
+        </div>
+    </div>
+
+    <!-- Featured Products End -->
+
+    <!-- Contact Us Start -->
+
+    <div class="featured">Contact Us</div>
+
+    <div class="container3">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="lname">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your last Email..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+
+    <!-- Contact Us End -->
+
+
+
+    <!-- Footer Start -->
+
+    <footer class="container4">
+        <div class="sec">
+            <h1>ArrowWatch</h1>
+            <p>Style With <b>ArrowWatch</b></p>
+        </div>
+        <div class="sec">
+            <h2>Navigation</h2>
+            <ul>
+                <li class="fotter-li"><a href="index.html">Home</a></li>
+                <li class="fotter-li"><a href="offers.html">Offers</a></li>
+                <li class="fotter-li"><a href="featuredproduct.html">Featured Product</a></li>
+            </ul>
+        </div>
+
+        <div class="sec">
+            <h2>Follow Us</h2>
+            <ul>
+                <li class="fotter-li"><a href="">Facebook</a></li>
+                <li class="fotter-li"><a href="">Instagram</a></li>
+                <li class="fotter-li"><a href="">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer end -->
+</body>
+
+</html>
